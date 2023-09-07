@@ -3,11 +3,11 @@ from django.db import models
 # Definição do modelo de Equipes Fórmula 1.
 class Equipe(models.Model):
     nome_equipe = models.CharField(max_length=50)
-    pais = models.CharField(max_length=20) 
+    pais_sede = models.CharField(max_length=20) 
 
     def __str__(self):
         # Retorno de uma representação de string
-        return f'Nome da equipe: {self.nome_equipe}, País: {self.pais}'
+        return f'Nome da equipe: {self.nome_equipe}, País: {self.pais_sede}'
 
 # Definição do modelo Pilotos de Fórmula 1
 class Pilotos(models.Model):
